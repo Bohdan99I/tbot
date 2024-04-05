@@ -9,4 +9,4 @@ FROM alpine:latest
 WORKDIR /
 COPY --from=builder /go/src/app/tbot .
 COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
-ENTRYPOINT ["./tbot"]
+ENTRYPOINT ["./kbot", "start"]
