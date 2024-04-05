@@ -20,9 +20,9 @@ var (
 
 // tbotCmd represents the tbot command
 var tbotCmd = &cobra.Command{
-	Use:   "tbot",
+	Use:     "tbot",
 	Aliases: []string{"go"},
-	Short: "A brief description of your command",
+	Short:   "A brief description of your command",
 	Long: `A longer description that spans multiple lines and likely contains examples
 and usage of using your command. For example:
 
