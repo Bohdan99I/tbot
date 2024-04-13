@@ -8,9 +8,9 @@ image:
   repository: bohdan99I/tbot
   # Overrides the image tag whose default is the chart appVersion.
   tag: "v1.0-44186e8"
-  arch: amd64
+  arch: arm64
 secret:
-  name: "tbot"
+  name: "kbot"
   env: "TELE_TOKEN"
   key: "token"
 securityContext:
