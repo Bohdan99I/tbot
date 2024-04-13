@@ -10,7 +10,7 @@ image:
   tag: "v1.0-44186e8"
   arch: arm64
 secret:
-  name: "kbot"
+  name: "tbot"
   env: "TELE_TOKEN"
   key: "token"
 securityContext:
