@@ -5,7 +5,7 @@ COPY . .
 
 ARG TARGETARCH
 ARG TARGETOS
-RUN make build 
+RUN make build TARGETARCH=$TARGETARCH
 
 FROM scratch
 WORKDIR /

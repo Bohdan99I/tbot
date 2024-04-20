@@ -8,7 +8,7 @@ image:
   registry: "ghcr.io"
   repository: "bohdan99I/tbot"
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v1.0-44186e8"
+  tag: "v1.0.5-6d819f7"
    os: linux
   arch: amd64
 secret:
