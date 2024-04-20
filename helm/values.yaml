@@ -5,14 +5,17 @@
 replicaCount: 1
 
 image:
-  repository: bohdan99I/tbot
+  registry: "ghcr.io"
+  repository: "bohdan99I/tbot"
   # Overrides the image tag whose default is the chart appVersion.
   tag: "v1.0-44186e8"
-  arch: arm64
+   os: linux
+  arch: amd64
 secret:
-  name: "tbot"
-  env: "TELE_TOKEN"
-  key: "token"
+  name: tbot
+  tokenName: TELE_TOKEN
+  tokenKey: token
+  secretValue: TELE_TOKEN
 securityContext:
   privileged: true
 
