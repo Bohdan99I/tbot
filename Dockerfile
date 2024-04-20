@@ -4,7 +4,6 @@ WORKDIR /go/src/app
 COPY . .
 
 ARG TARGETARCH
-ARG TARGETOS
 RUN make build TARGETARCH=$TARGETARCH
 
 FROM scratch
