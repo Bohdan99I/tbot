@@ -1,5 +1,5 @@
 APP=$(shell basename $(shell git remote get-url origin))
-REGISTRY=bohdan99i
+REGISTRY=ghcr.io/bohdan99i
 # REPOSITORY=bohdan99i/tbot
 VERSION=$(shell git rev-parse --short HEAD)
 TARGETOS=linux
