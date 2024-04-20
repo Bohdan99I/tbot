@@ -1,6 +1,6 @@
 APP=$(shell basename $(shell git remote get-url origin))
 REGISTRY=ghcr.io
-REPOSITORY=bohdan99i/tbot
+# REPOSITORY=bohdan99i/tbot
 VERSION=$(shell git rev-parse --short HEAD)
 TARGETOS=linux
 TARGETARCH=amd64
@@ -24,7 +24,7 @@ image:
 	docker build . -t ${REGISTRY}/${REPOSITORY}:${VERSION}-${TARGETOS}-${TARGETARCH}  --build-arg TARGETARCH=${TARGETARCH} --build-arg TARGETOS=${TARGETOS}
 
 push:
-	docker push ${REGISTRY}/${REPOSITORY}:${VERSION}-${TARGETOS}-${TARGETARCH}
+	docker push ${REGISTRY}/${APP}:${VERSION}-${TARGETARCH}
 
 clean:
 	rm -rf tbot
