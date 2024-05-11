@@ -23,11 +23,11 @@ jobs:
         uses: docker/login-action@v3
         with:
           registry: ghcr.io
-          username: ${{ secrets.DOCKERHUB_USERNAME2 }}
-          password: ${{ secrets.DOCKERHUB_TOKEN2 }}
+          username: ${{ secrets.DOCKERHUB_USERNAME3 }}
+          password: ${{ secrets.DOCKERHUB_TOKEN3 }}
 
       - name: Build&Push
         env:
           APP: "tbot"
-          REGISTRY: ${{ secrets.DOCKERHUB_USERNAME2 }}
+          REGISTRY: ${{ secrets.DOCKERHUB_USERNAME3 }}
         run: make image push
